@@ -1,0 +1,20 @@
+1. var, short for variable, is a JavaScript keyword that creates, or declares, a new variable.
+
+2. myName is the variable’s name. Capitalizing in this way is a standard convention in JavaScript called camel casing. In camel casing you group words into one, the first word is lowercase, then every word that follows will have its first letter uppercased. (e.g. camelCaseEverything).
+-> First letter lowercase
+
+
+
+Keyword : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+
+자바스크립트 예약어와 식별자 : https://kk3june.tistory.com/17
+
+
+https://www.inflearn.com/course/lecture?courseSlug=%EC%A7%80%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%96%B8%EC%96%B4-%EA%B8%B0%EB%B3%B8&unitId=2466&tab=curriculum
+
+
+
+
+
+https://www.codeguage.com/blog/is-frontend-easier
