@@ -76,7 +76,9 @@ body {
 }
 
 form,
-ul {
+ul,
+p,
+i {
   margin: 0;
   padding: 0;
 }
