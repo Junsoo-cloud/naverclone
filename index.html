@@ -362,10 +362,6 @@
           width: 420px;
         }
 
-        #main-newstand {
-          height: 426px;
-
-        }
 
 
 
@@ -509,6 +505,8 @@
         }
 
         #main-login>div {
+          display: flex;
+          justify-content: center;
           margin-top: 16px;
           font-size: 1.3rem;
           line-height: 20px;
@@ -516,9 +514,10 @@
         }
 
         #main-login>div a {
+          color: var(--color_caption2);
           text-decoration: none;
-          color: #101010;
-          color: var(--color_body);
+          font-weight: 400;
+          letter-spacing: -0.4px;
         }
 
         #main-login>div a:hover {
@@ -536,11 +535,136 @@
           margin: 4px 12px 0;
           vertical-align: top;
         }
+
+        #main-newstand {
+          height: 426px;
+          display: flex;
+          flex-flow: column;
+        }
+
+        #main-newstand>div {
+          flex: 1;
+        }
+
+        #main-newstand a {
+          text-decoration: none;
+        }
+
+        #main-newstand a:hover {
+          text-decoration: underline;
+        }
+
+        #main-newstand header {
+          display: flex;
+          padding: 18px 20px 17px;
+          font-size: 1.6rem;
+          line-height: 23px;
+          color: rgba(8, 8, 8, .5);
+          font-weight: 800;
+        }
+
+        #main-newstand header>a {
+          color: inherit;
+          padding-left: 26px;
+        }
+
+        #main-newstand header>a:nth-child(2)::before {
+          content: "";
+          display: inline-block;
+          width: 4px;
+          height: 4px;
+          background-color: #d3d5d7;
+          background-color: var(--color_dot_divider);
+          margin: 9px 7px 0;
+          border-radius: 50%;
+          vertical-align: top;
+        }
+
+        #main-newstand header>a:first-of-type {
+          color: var(--color_title);
+          padding-left: 0;
+        }
+
+        #main-newstand header>a:nth-child(2) {
+          padding-left: 0;
+        }
+
+        #main-newstand footer {
+          border-top: 1px solid var(--color_border_in);
+          padding: 10px 0 11px;
+        }
+
+        #main-newstand-grid {
+          width: 790px;
+          height: 224px;
+          display: grid;
+          margin: 18px;
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: repeat(6, 1fr);
+          background-color: var(--color_option_bg);
+          justify-content: center;
+          align-items: center;
+          grid-gap: 1px;
+        }
       </style>
       <main id="main">
         <div id="main-left">
           <aside id="main-left-ad"></aside>
-          <section id="main-newstand"></section>
+          <section id="main-newstand">
+            <div>
+              <header>
+                <a href="#">뉴스스탠드</a>
+                <a href="#">언론사편집</a>
+                <a href="#">엔터</a>
+                <a href="#">스포츠</a>
+                <a href="#">경제</a>
+              </header>
+              <div id="main-newstand-gray">
+                <div>
+                  <a href="#">전체언론사</a>
+                  <a href="#">연합뉴스</a>
+                  <a href="#">뉴스제목</a>
+                </div>
+                <div>
+                  <a href="#">뉴스스탠드</a>
+                  <a href="#">뉴스홈</a>
+                </div>
+              </div>
+              <div id="main-newstand-grid">
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+                <div>언론사</div>
+              </div>
+            </div>
+            <footer>
+              <button><span class="blind">이전</span></button>
+              <div>언론사 더보기</div>
+              <button><span class="blind">다음</span></button>
+              <button><span class="blind">목록보기</span></button>
+              <button><span class="blind">격자보기</span></button>
+            </footer>
+          </section>
           <section id="main-shopping"></section>
         </div>
         <div id="main-right">
